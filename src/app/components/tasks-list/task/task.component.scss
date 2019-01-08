@@ -1,0 +1,27 @@
+@import '../../../../assets/scss/variables';
+.item-task {
+  color: #ffffff;
+  padding: 1rem;
+  background-color: $red;
+  font-weight: bold;
+  border-bottom: 1px #fff solid;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .btn-delete {
+    cursor: pointer;
+    border: solid 2px #fff;
+    color: #fff;
+    width: 33px;
+    height: 33px;
+    font-weight: bold;
+    border-radius: 50%;
+    font-size: 15px;
+    text-align: center;
+  }
+  p {
+    max-width: 90%;
+    overflow: auto;
+  }
+}
