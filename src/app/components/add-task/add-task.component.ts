@@ -11,11 +11,10 @@ export class AddTaskComponent implements OnInit {
 
   ngOnInit() {
   }
-  addTask(value: string){
-    if (value !== '') {
-      this.taskService.taskAdded(value);
-      this.inputTask.nativeElement.value = '';
-    }
+  onSubmit(e: Event){
+    e.preventDefault()
+    this.taskService.taskAdded(this.inputTask.nativeElement.value);
+    this.inputTask.nativeElement.value = '';
   }
 
 }

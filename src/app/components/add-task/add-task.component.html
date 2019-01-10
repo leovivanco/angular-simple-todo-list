@@ -1,6 +1,6 @@
-<div>
+<form (submit)="onSubmit($event)" >
   <div class="row">
     <input type="text" class="input-form" required #inputTask>
-    <button class="btn btn-add" type="button" (click)="addTask(inputTask.value)">Add</button>
+    <button class="btn btn-add" type="submit" >Add</button>
   </div>
-</div>
+</form>
